@@ -11,11 +11,11 @@ class HomeController extends AbstractController
 
     /**
      * Méthode pour afficher la page d'accueil
-     * @return mixed Retourne le template
+     * @return void Retourne le template
      */
-    public function index(): mixed
+    public function index(): void
     {
 
-        return $this->render("home", "accueil");
+        $this->render("home", "accueil");
     }
 }
